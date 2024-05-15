@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #ff6b6b; /* Coral */
+  --secondary-color: #77dd77; /* Pastel Green */
+  --accent-color: #ffd166; /* Yellow */
+  --neutral-color: #333333; /* Charcoal */
+  --placeholder-color: #cccccc; /* Light Gray */
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--neutral-color);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  color: var(--secondary-color); /* Changed heading color to Pastel Green */
+  text-align: center; /* Align heading to center */
+  margin-bottom: 0.5em;
+}
+
+ul {
+  margin-top: 0.5em;
+  padding-left: 20px;
+}
+
+.section {
+  margin-bottom: 2em;
+  padding: 20px;
+}
+
+.section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section .content ul {
+  flex: 1;
+}
+
+.section .content ul li {
+  margin-bottom: 10px;
+}
+
+.cta {
+  background-color: var(
+    --main-color
+  ); /* Changed CTA background color to Coral */
+  color: white; /* Changed CTA text color to Pastel Green */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: var(--placeholder-color);
+  margin-top: 20px;
+}
+
+/* Add CSS for navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  z-index: 1000; /* Ensure navbar appears above other content */
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--neutral-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-color);
+}
